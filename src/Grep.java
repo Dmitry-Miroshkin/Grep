@@ -14,6 +14,7 @@ public class Grep {
             String line;
             do {
                 line = gis.readLine();
+                if (line != null) System.out.println(line);
             } while (line != null);
             gis.close();
         } catch (IOException ioe) {
