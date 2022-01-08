@@ -24,7 +24,7 @@ public class GrepInputStream  extends FilterInputStream {
         String line;
         do {
             line = br.readLine();
-        } while ((line != null) && line.indexOf(substring) == -1);
+        } while ((line != null) && !line.contains(substring));
         return line;
     }
 }
